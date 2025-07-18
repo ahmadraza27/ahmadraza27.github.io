@@ -1,102 +1,182 @@
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f8f9fa;
-}
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-header {
-  background: #2b2d42;
-  color: white;
-  text-align: center;
-  padding: 2rem 1rem;
-}
-header h1 {
-  font-size: 2.5rem;
-}
-header a {
-  color: #fcbf49;
-  text-decoration: none;
-}
-section {
-  margin-top: 2rem;
-}
-h2 {
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  color: #2b2d42;
-}
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.skills-list span {
-  background: #edf2f4;
-  border: 1px solid #ccc;
-  padding: 0.4rem 0.8rem;
-  border-radius: 20px;
-}
-.project {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: white;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-.project img {
-  width: 120px;
-  height: auto;
-  border-radius: 6px;
-  object-fit: cover;
-}
-footer {
-  background: #2b2d42;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
-  margin-top: 2rem;
-}
-.carousel {
-  position: relative;
-  width: 100%;
-  max-width: 600px;
-  overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.carousel-images {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.carousel img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-
-.features {
-  margin-top: 10px;
-  padding-left: 20px;
-}
-
-.features li {
-  margin-bottom: 8px;
-}
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f8f9fa;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    
+    header {
+      background: linear-gradient(135deg, #2b2d42 0%, #1a1b2f 100%);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-bottom: 2rem;
+    }
+    
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    header a {
+      color: #fcbf49;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    
+    header a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    
+    section {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    }
+    
+    h2 {
+      color: #2b2d42;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #fcbf49;
+    }
+    
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+    
+    .skills-list span {
+      background: #edf2f4;
+      padding: 0.6rem 1rem;
+      border-radius: 30px;
+      font-weight: 500;
+    }
+    
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    
+    .project {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .project-inner {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+    
+    .project-content {
+      flex: 1;
+    }
+    
+    .project h3 {
+      font-size: 1.8rem;
+      color: #2b2d42;
+      margin-bottom: 1rem;
+    }
+    
+    .features {
+      margin: 1rem 0;
+      padding-left: 1.5rem;
+    }
+    
+    .features li {
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+    }
+    
+    .carousel-container {
+      flex: 1;
+      max-width: 600px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+    
+    .carousel-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    
+    .carousel-images img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    
+    .carousel-nav {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      /* background-color: gray; */
+    }
+    
+    .carousel-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: gray;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .carousel-dot.active {
+      background: #fcbf49;
+      transform: scale(1.2);
+    }
+    
+    footer {
+      background: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 2rem;
+    }
+    
+    @media (max-width: 768px) {
+      .project-inner {
+        flex-direction: column;
+      }
+      
+      .carousel-container {
+        width: 100%;
+        max-width: 100%;
+      }
+      
+      .carousel-images img {
+        height: 300px;
+      }
+    }
