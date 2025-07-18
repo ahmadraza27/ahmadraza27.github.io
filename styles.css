@@ -71,3 +71,32 @@ footer {
   padding: 1rem 0;
   margin-top: 2rem;
 }
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.features {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.features li {
+  margin-bottom: 8px;
+}
